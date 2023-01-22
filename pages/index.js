@@ -21,14 +21,17 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Intro />
-        <Header
-          linksArray={[
-            ["/", "Home"],
-            ["/projects", "My Work"],
-            ["/contact", "Contact"],
-          ]}
-          logoImage="/pic.avif"
-        />
+        <Header />
+
+        {/*<Header
+                  linksArray={[
+                    ["/", "Home"],
+                    ["/projects", "My Work"],
+                    ["/contact", "Contact"],
+                  ]}
+                  logoImage="/pic.avif"
+                />*/}
+
         <div className={styles.grid}>
           <Project
             link="/"
