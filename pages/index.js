@@ -1,6 +1,8 @@
 import Head from "next/head";
 
 import Project from "../components/Project";
+import Header from "../components/Header";
+
 import styles from "../styles/pages/Home.module.css";
 
 export default function Home() {
@@ -16,30 +18,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Header
+          linksArray={[
+            ["/", "Home"],
+            ["/projects", "My Work"],
+            ["/contact", "Contact"],
+          ]}
+          logoImage="/pic.avif"
+        />
         <div className={styles.grid}>
           <Project
             link="/"
-            title="Project 1"
+            title="Metronome App"
             description="project utilizing x and y technologies to implement x and y functionality"
-            image="/laptop.jpg"
+            image="/pic.avif"
           />
           <Project
             link="/"
             title="Project 2"
             description="project utilizing x and y technologies to implement x and y functionality"
-            image="/laptop.jpg"
+            image="/pic.avif"
           />
           <Project
             link="/"
             title="Project 3"
             description="project utilizing x and y technologies to implement x and y functionality"
-            image="/laptop.jpg"
+            image="/pic.avif"
           />
           <Project
             link="/"
             title="Project 4"
             description="project utilizing x and y technologies to implement x and y functionality"
-            image="/laptop.jpg"
+            image="/pic.avif"
           />
         </div>
       </main>

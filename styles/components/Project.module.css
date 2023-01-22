@@ -29,6 +29,8 @@
   width: 100%;
   border-radius: var(--border-radius);
   object-fit: cover;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 /* Enable hover only on non-touch devices */
@@ -51,7 +53,7 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .card {
     padding: 1rem 2.5rem;
   }
