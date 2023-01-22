@@ -1,8 +1,10 @@
+// next components
 import Head from "next/head";
-
+// custom components
 import Project from "../components/Project";
 import Header from "../components/Header";
-
+import Intro from "../components/Intro";
+// home page css
 import styles from "../styles/pages/Home.module.css";
 
 export default function Home() {
