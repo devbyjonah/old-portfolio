@@ -7,7 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function Header() {
 	return (
-		<Navbar fixed="top" expand="sm">
+		<Navbar className="bg-dark opacity-75" fixed="top" expand="sm">
 			<Container>
 				<Navbar.Brand href="#home">
 					<Image
@@ -20,16 +20,16 @@ export default function Header() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav
-						className="w-100 justify-content-end bg-gradient h-100"
+						className="w-100 justify-content-end"
 						style={{ gap: 50 + "px" }}
 					>
-						<Nav.Link className="fs-4" href="#home">
+						<Nav.Link className="fs-4 fw-light" href="#home">
 							Home
 						</Nav.Link>
-						<Nav.Link className="fs-4" href="#projects">
+						<Nav.Link className="fs-4 fw-light" href="#projects">
 							My Work
 						</Nav.Link>
-						<Nav.Link className="fs-4" href="#contact">
+						<Nav.Link className="fs-4 fw-light" href="#contact">
 							Contact
 						</Nav.Link>
 					</Nav>
