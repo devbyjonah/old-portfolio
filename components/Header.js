@@ -4,6 +4,9 @@ import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
+
+import { BsFillSunFill } from "react-icons/bs";
 
 export default function Header() {
 	return (
@@ -17,6 +20,9 @@ export default function Header() {
 						height={64}
 					/>
 				</Navbar.Brand>
+				<Button variant="dark" className="btn-lg">
+					<BsFillSunFill />
+				</Button>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav
