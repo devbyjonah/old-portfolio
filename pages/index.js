@@ -45,7 +45,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={darkMode ? "text-bg-dark" : "text-bg-light"}>
-        <main className="d-flex flex-column justify-content-between align-items-center mt-5">
+        <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center mt-5">
           <Intro darkMode={darkMode} />
           <Header darkMode={darkMode} darkModeButton={darkModeButton} />
           <div className={styles.grid}>
@@ -53,28 +53,28 @@ export default function Home() {
               link="/"
               title="Metronome App"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/pic.avif"
+              image="/profile.png"
               darkMode={darkMode}
             />
             <Project
               link="/"
               title="Project 2"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/pic.avif"
+              image="/profile.png"
               darkMode={darkMode}
             />
             <Project
               link="/"
               title="Project 3"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/pic.avif"
+              image="/profile.png"
               darkMode={darkMode}
             />
             <Project
               link="/"
               title="Project 4"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/pic.avif"
+              image="/profile.png"
               darkMode={darkMode}
             />
           </div>
