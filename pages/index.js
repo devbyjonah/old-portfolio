@@ -31,28 +31,28 @@ export default function Home() {
               link="/"
               title="Metronome App"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/profile.png"
+              image="/default.png"
               darkMode={darkMode}
             />
             <Project
               link="/"
               title="Project 2"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/profile.png"
+              image="/default.png"
               darkMode={darkMode}
             />
             <Project
               link="/"
               title="Project 3"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/profile.png"
+              image="/default.png"
               darkMode={darkMode}
             />
             <Project
               link="/"
               title="Project 4"
               description="project utilizing x and y technologies to implement x and y functionality"
-              image="/profile.png"
+              image="/default.png"
               darkMode={darkMode}
             />
           </div>
