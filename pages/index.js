@@ -24,8 +24,8 @@ export default function Home() {
       </Head>
       <div className={darkMode ? "text-bg-dark" : "text-bg-light"}>
         <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center">
-          <Intro />
           <Header />
+          <Intro />
           <div className={styles.grid}>
             <Project
               link="/"
