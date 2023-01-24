@@ -7,32 +7,7 @@ import Intro from "../components/Intro";
 // home page css
 import styles from "../styles/pages/Home.module.css";
 
-import Button from "react-bootstrap/Button";
-import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
-
-import { useState } from "react";
-
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
-  const darkModeToggle = () => {
-    if (darkMode) {
-      setDarkMode(false);
-    } else {
-      setDarkMode(true);
-    }
-  };
-  const darkModeButton = (
-    <>
-      <Button
-        variant={darkMode ? "light" : "dark"}
-        className="btn-lg"
-        onClick={darkModeToggle}
-      >
-        {darkMode ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
-      </Button>
-    </>
-  );
-
+export default function Home({ darkMode, darkModeButton }) {
   return (
     <>
       <Head>
