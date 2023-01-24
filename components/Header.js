@@ -28,7 +28,6 @@ export default function Header() {
 						height={64}
 					/>
 				</Navbar.Brand>
-
 				<Button
 					variant={darkMode ? "light" : "dark"}
 					className="btn-lg"
@@ -37,7 +36,7 @@ export default function Header() {
 					{darkMode ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
 				</Button>
 				<Navbar.Toggle
-					className="text-bg-light"
+					className={darkMode ? "bg-light" : "bg-dark"}
 					aria-controls="basic-navbar-nav"
 				/>
 				<Navbar.Collapse id="basic-navbar-nav">
