@@ -7,7 +7,32 @@ import Intro from "../components/Intro";
 // home page css
 import styles from "../styles/pages/Home.module.css";
 
+import Button from "react-bootstrap/Button";
+import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
+
+import { useState } from "react";
+
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
+  const darkModeToggle = () => {
+    if (darkMode) {
+      setDarkMode(false);
+    } else {
+      setDarkMode(true);
+    }
+  };
+  const darkModeButton = (
+    <>
+      <Button
+        variant={darkMode ? "light" : "dark"}
+        className="btn-lg"
+        onClick={darkModeToggle}
+      >
+        {darkMode ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
+      </Button>
+    </>
+  );
+
   return (
     <>
       <Head>
@@ -19,46 +44,42 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Intro />
-        <Header />
-
-        {/*<Header
-                  linksArray={[
-                    ["/", "Home"],
-                    ["/projects", "My Work"],
-                    ["/contact", "Contact"],
-                  ]}
-                  logoImage="/pic.avif"
-                />*/}
-
-        <div className={styles.grid}>
-          <Project
-            link="/"
-            title="Metronome App"
-            description="project utilizing x and y technologies to implement x and y functionality"
-            image="/pic.avif"
-          />
-          <Project
-            link="/"
-            title="Project 2"
-            description="project utilizing x and y technologies to implement x and y functionality"
-            image="/pic.avif"
-          />
-          <Project
-            link="/"
-            title="Project 3"
-            description="project utilizing x and y technologies to implement x and y functionality"
-            image="/pic.avif"
-          />
-          <Project
-            link="/"
-            title="Project 4"
-            description="project utilizing x and y technologies to implement x and y functionality"
-            image="/pic.avif"
-          />
-        </div>
-      </main>
+      <div className={darkMode ? "text-bg-dark" : "text-bg-light"}>
+        <main className="d-flex flex-column justify-content-between align-items-center p-5 min-vh-100">
+          <Intro darkMode={darkMode} />
+          <Header darkMode={darkMode} darkModeButton={darkModeButton} />
+          <div className={styles.grid}>
+            <Project
+              link="/"
+              title="Metronome App"
+              description="project utilizing x and y technologies to implement x and y functionality"
+              image="/pic.avif"
+              darkMode={darkMode}
+            />
+            <Project
+              link="/"
+              title="Project 2"
+              description="project utilizing x and y technologies to implement x and y functionality"
+              image="/pic.avif"
+              darkMode={darkMode}
+            />
+            <Project
+              link="/"
+              title="Project 3"
+              description="project utilizing x and y technologies to implement x and y functionality"
+              image="/pic.avif"
+              darkMode={darkMode}
+            />
+            <Project
+              link="/"
+              title="Project 4"
+              description="project utilizing x and y technologies to implement x and y functionality"
+              image="/pic.avif"
+              darkMode={darkMode}
+            />
+          </div>
+        </main>
+      </div>
     </>
   );
 }
