@@ -16,7 +16,7 @@ export default function Header() {
 		<Navbar
 			className={darkMode ? "text-bg-dark" : "text-bg-light"}
 			fixed="top"
-			expand="xl"
+			expand="lg"
 			style={{ opacity: 95 + "%" }}
 		>
 			<Container>
