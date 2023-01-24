@@ -1,3 +1,4 @@
+import { useContext } from "react";
 // next components
 import Head from "next/head";
 // custom components
@@ -6,8 +7,10 @@ import Header from "../components/Header";
 import Intro from "../components/Intro";
 // home page css
 import styles from "../styles/pages/Home.module.css";
+import { DarkModeContext } from "@/context/DarkModeContext";
 
-export default function Home({ darkMode, darkModeButton }) {
+export default function Home() {
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <>
       <Head>
@@ -20,9 +23,9 @@ export default function Home({ darkMode, darkModeButton }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={darkMode ? "text-bg-dark" : "text-bg-light"}>
-        <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center mt-5">
-          <Intro darkMode={darkMode} />
-          <Header darkMode={darkMode} darkModeButton={darkModeButton} />
+        <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center">
+          <Intro />
+          <Header />
           <div className={styles.grid}>
             <Project
               link="/"

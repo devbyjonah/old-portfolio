@@ -1,10 +1,17 @@
 import Image from "next/image";
 
+import { useContext } from "react";
+import { DarkModeContext } from "@/context/DarkModeContext";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
 
-export default function Header({ darkMode, darkModeButton }) {
+import { BsFillSunFill, BsFillMoonStarsFill } from "react-icons/bs";
+
+export default function Header() {
+	const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 	return (
 		<Navbar
 			className={darkMode ? "text-bg-dark" : "text-bg-light"}
@@ -21,7 +28,14 @@ export default function Header({ darkMode, darkModeButton }) {
 						height={64}
 					/>
 				</Navbar.Brand>
-				{darkModeButton}
+
+				<Button
+					variant={darkMode ? "light" : "dark"}
+					className="btn-lg"
+					onClick={() => toggleDarkMode()}
+				>
+					{darkMode ? <BsFillSunFill /> : <BsFillMoonStarsFill />}
+				</Button>
 				<Navbar.Toggle
 					className="text-bg-light"
 					aria-controls="basic-navbar-nav"

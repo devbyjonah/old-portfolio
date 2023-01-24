@@ -1,9 +1,8 @@
 import Header from "../components/Header";
 
-export default function Layout({ children, nightMode, nightModeButton }) {
+export default function Layout({ children }) {
   return (
     <>
-      <Header nightMode={nightMode} nightModeButton={nightModeButton} />
       <main>{children}</main>
     </>
   );

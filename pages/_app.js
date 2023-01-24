@@ -3,18 +3,16 @@ import "@/styles/globals.css";
 import SSRProvider from "react-bootstrap/SSRProvider";
 
 import Layout from "../components/layout";
-
-import { useState } from "react";
-
-import { Inter } from "@next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import { DarkModeProvider } from "../context/DarkModeContext";
 
 export default function App({ Component, pageProps }) {
   return (
     <SSRProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <DarkModeProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </DarkModeProvider>
     </SSRProvider>
   );
 }
