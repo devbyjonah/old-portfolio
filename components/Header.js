@@ -8,13 +8,10 @@ import Navbar from "react-bootstrap/Navbar";
 export default function Header({ darkMode, darkModeButton }) {
 	return (
 		<Navbar
-			className={
-				darkMode
-					? "opacity-75 text-bg-dark"
-					: "opacity-75 text-bg-light"
-			}
+			className={darkMode ? "text-bg-dark" : "text-bg-light"}
 			fixed="top"
 			expand="xl"
+			style={{ opacity: 95 + "%" }}
 		>
 			<Container>
 				<Navbar.Brand href="#home">

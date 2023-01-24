@@ -45,7 +45,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={darkMode ? "text-bg-dark" : "text-bg-light"}>
-        <main className="d-flex flex-column justify-content-between align-items-center p-5 min-vh-100">
+        <main className="d-flex flex-column justify-content-between align-items-center mt-5">
           <Intro darkMode={darkMode} />
           <Header darkMode={darkMode} darkModeButton={darkModeButton} />
           <div className={styles.grid}>
