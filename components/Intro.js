@@ -1,4 +1,5 @@
 import Image from "next/image";
+import profilePicture from "../public/jonahFinal.png";
 
 export default function Intro() {
 	return (
@@ -13,18 +14,18 @@ export default function Intro() {
 						<div className="w-100 d-flex justify-content-center mt-5">
 							<div>
 								<Image
-									width={244}
-									height={244}
-									src="/profile.png"
+									width={320}
+									height={213}
+									src={profilePicture}
 									alt="A picture of me!"
-									className="float-start rounded-circle p-1"
+									className="img-fluid float-start rounded-circle p-1"
 								/>
 							</div>
-							<div className="mt-auto mb-auto ms-md-5">
+							<div className="mt-auto mb-auto ms-5">
 								<span className="fw-lighter p-1">
 									Hello! My name is
 									<h2 className="fs-1 fw-light">
-										Jonah Wagner.
+										Jonah&nbsp;Wagner.
 									</h2>
 								</span>
 								<span className="fw-lighter p-1">
