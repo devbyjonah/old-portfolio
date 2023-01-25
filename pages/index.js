@@ -5,7 +5,6 @@ import Head from "next/head";
 import ProjectGrid from "../components/ProjectGrid";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
-import Wave from "react-wavify";
 
 import { DarkModeContext } from "@/context/DarkModeContext";
 
