@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 50%);
   width: var(--max-width);
   max-width: 100%;
+  color: white;
 }
 
 /* Mobile */

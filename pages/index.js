@@ -2,12 +2,11 @@ import { useContext } from "react";
 // next components
 import Head from "next/head";
 // custom components
-import Project from "../components/Project";
+import ProjectGrid from "../components/ProjectGrid";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Wave from "react-wavify";
-// home page css
-import styles from "../styles/pages/Home.module.css";
+
 import { DarkModeContext } from "@/context/DarkModeContext";
 
 export default function Home() {
@@ -27,36 +26,7 @@ export default function Home() {
         <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center">
           <Header />
           <Intro />
-          <div className={styles.grid} id="projects">
-            <Project
-              link="/"
-              title="Metronome App"
-              description="project utilizing x and y technologies to implement x and y functionality"
-              image="/default.png"
-              darkMode={darkMode}
-            />
-            <Project
-              link="/"
-              title="Project 2"
-              description="project utilizing x and y technologies to implement x and y functionality"
-              image="/default.png"
-              darkMode={darkMode}
-            />
-            <Project
-              link="/"
-              title="Project 3"
-              description="project utilizing x and y technologies to implement x and y functionality"
-              image="/default.png"
-              darkMode={darkMode}
-            />
-            <Project
-              link="/"
-              title="Project 4"
-              description="project utilizing x and y technologies to implement x and y functionality"
-              image="/default.png"
-              darkMode={darkMode}
-            />
-          </div>
+          <ProjectGrid />
         </main>
       </div>
     </>

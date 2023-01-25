@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/components/Project.module.css";
 
-export default function Project({ link, image, title, description, darkMode }) {
-	const theme = darkMode ? "text-light" : "text-dark";
+export default function Project({ link, image, title, description }) {
 	return (
 		<Link href={link} className={styles.card}>
 			<Image
@@ -13,10 +12,10 @@ export default function Project({ link, image, title, description, darkMode }) {
 				width={144}
 				height={200}
 			/>
-			<h2 className={theme}>
+			<h2>
 				{title} <span>-&gt;</span>
 			</h2>
-			<p className={theme}>{description}</p>
+			<p>{description}</p>
 		</Link>
 	);
 }
