@@ -20,7 +20,7 @@ export default function Header() {
 			style={{ opacity: 95 + "%" }}
 		>
 			<Container>
-				<Navbar.Brand href="#home">
+				<Navbar.Brand className="m-0 m-lg-2" href="#home">
 					<Image
 						src="/profile.png"
 						alt="logo"
