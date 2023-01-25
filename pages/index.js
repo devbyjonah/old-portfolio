@@ -5,6 +5,7 @@ import Head from "next/head";
 import Project from "../components/Project";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
+import Wave from "react-wavify";
 // home page css
 import styles from "../styles/pages/Home.module.css";
 import { DarkModeContext } from "@/context/DarkModeContext";
