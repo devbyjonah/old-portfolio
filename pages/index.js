@@ -23,11 +23,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={darkMode ? "text-bg-dark" : "text-bg-light"}>
+      <div id="home" className={darkMode ? "text-bg-dark" : "text-bg-light"}>
         <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center">
           <Header />
           <Intro />
-          <div className={styles.grid}>
+          <div className={styles.grid} id="projects">
             <Project
               link="/"
               title="Metronome App"
