@@ -7,7 +7,7 @@ import { DarkModeContext } from "@/context/DarkModeContext";
 export default function Intro() {
 	let { darkMode } = useContext(DarkModeContext);
 	return (
-		<div style={{ marginTop: 100 + "px" }} className="container-fluid h-25">
+		<div style={{ marginTop: 100 + "px" }} className="container-fluid p-0">
 			<div className="row h-100">
 				<div className="col-2 d-none d-lg-block"></div>
 				<div className="col position-relative">
@@ -57,14 +57,14 @@ export default function Intro() {
 							gradientTransform="rotate(90)"
 						>
 							<stop offset="10%" stopColor="rgb(102, 162, 243)" />
-							<stop offset="90%" stopColor="rgb(248, 249, 250)" />
+							<stop offset="90%" stopColor="rgb(102, 162, 243)" />
 						</linearGradient>
 						<linearGradient
 							id="gradientDark"
 							gradientTransform="rotate(90)"
 						>
-							<stop offset="10%" stopColor="rgb(99, 156, 233)" />
-							<stop offset="90%" stopColor="rgb(34, 37, 41)" />
+							<stop offset="10%" stopColor="rgb(102, 162, 243)" />
+							<stop offset="90%" stopColor="rgb(102, 162, 243)" />
 						</linearGradient>
 					</defs>
 				</Wave>

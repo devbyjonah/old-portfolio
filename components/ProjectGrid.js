@@ -3,7 +3,7 @@ import styles from "../styles/components/ProjectGrid.module.css";
 
 export default function ProjectGrid() {
   return (
-    <div className={`${styles.grid} bg-transparent text-reset`} id="projects">
+    <div className={`${styles.grid} text-reset`} id="projects">
       <Project
         link="/"
         title="Metronome App"

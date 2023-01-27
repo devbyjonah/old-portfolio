@@ -1,10 +1,11 @@
 import { useContext } from "react";
+import Wave from "react-wavify";
 // next components
 import Head from "next/head";
 // custom components
 import ProjectGrid from "../components/ProjectGrid";
-import Header from "../components/Header";
 import Intro from "../components/Intro";
+import Middle from "../components/Middle";
 
 import { DarkModeContext } from "@/context/DarkModeContext";
 
@@ -23,8 +24,30 @@ export default function Home() {
       </Head>
       <div id="home" className={darkMode ? "text-bg-dark" : "text-bg-light"}>
         <main className="min-vh-100 d-flex flex-column justify-content-between align-items-center">
-          <Header />
           <Intro />
+          <Middle />
+          <Wave
+            style={{ transform: "rotate(180deg)" }}
+            fill={darkMode ? "url(#gradientDark)" : "url(#gradientLight)"}
+            paused={false}
+            options={{
+              height: 30,
+              amplitude: 40,
+              speed: 0.15,
+              points: 3,
+            }}
+          >
+            <defs>
+              <linearGradient id="gradientLight" gradientTransform="rotate(90)">
+                <stop offset="10%" stopColor="rgb(102, 162, 243)" />
+                <stop offset="90%" stopColor="rgb(102, 162, 243)" />
+              </linearGradient>
+              <linearGradient id="gradientDark" gradientTransform="rotate(90)">
+                <stop offset="10%" stopColor="rgb(102, 162, 243)" />
+                <stop offset="90%" stopColor="rgb(102, 162, 243)" />
+              </linearGradient>
+            </defs>
+          </Wave>
           <ProjectGrid />
         </main>
       </div>
