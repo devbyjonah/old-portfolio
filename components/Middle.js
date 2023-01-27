@@ -49,15 +49,18 @@ export default function Middle() {
 					</p>
 				</div>
 				<div className="col-xxl-2 col-1 d-none d-md-block"></div>
-				<div className="d-flex flex-row justify-content-around">
-					<DiJavascript1 className="icons" />
-					<DiNodejs className="icons" />
-					<DiReact className="icons" />
-					<DiMongodb className="icons" />
-					<DiNpm className="icons" />
-					<DiHeroku className="icons" />
-					<DiGit className="icons" />
-					<DiGithubBadge className="icons" />
+				<div
+					id="icons"
+					className="d-flex flex-row justify-content-around"
+				>
+					<DiJavascript1 />
+					<DiNodejs />
+					<DiReact />
+					<DiMongodb />
+					<DiNpm />
+					<DiHeroku />
+					<DiGit />
+					<DiGithubBadge />
 				</div>
 			</div>
 		</div>
