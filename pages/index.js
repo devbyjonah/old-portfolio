@@ -33,7 +33,7 @@ export default function Home() {
             options={{
               height: 30,
               amplitude: 40,
-              speed: 0.15,
+              speed: 0.13,
               points: 3,
             }}
           >
