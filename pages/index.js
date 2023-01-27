@@ -48,7 +48,6 @@ export default function Home() {
               </linearGradient>
             </defs>
           </Wave>
-          <ProjectGrid />
         </main>
       </div>
     </>

@@ -91,3 +91,8 @@ a {
 a:hover {
   color: inherit;
 }
+
+.icons {
+  width: 144px;
+  height: 144px;
+}

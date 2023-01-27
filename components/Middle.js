@@ -1,13 +1,27 @@
+import Image from "next/image";
+
 import Wave from "react-wavify";
 import { useContext } from "react";
 import { DarkModeContext } from "@/context/DarkModeContext";
+import {
+	DiJavascript1,
+	DiNodejs,
+	DiReact,
+	DiMongodb,
+	DiGit,
+	DiGithubBadge,
+	DiHeroku,
+	DiNpm,
+	DiHtml5,
+	DiCss3,
+} from "react-icons/di";
 
 export default function Middle() {
 	const { darkMode } = useContext(DarkModeContext);
 
 	return (
 		<div
-			className="min-vh-100 container-fluid"
+			className="container-fluid"
 			style={{ backgroundColor: "rgb(102, 162, 243)" }}
 		>
 			<div className="row">
@@ -26,7 +40,7 @@ export default function Middle() {
 					<h2 className="p-1">
 						-&gt; Currently looking to join a product team.
 					</h2>
-					<p className="mb-5">
+					<p className="">
 						I am highly intersted in any opportunity to join a
 						collaborative team that prioritizes creating accessible
 						web applications to enhance people&apos;s lives. Connect
@@ -35,35 +49,17 @@ export default function Middle() {
 					</p>
 				</div>
 				<div className="col-xxl-2 col-1 d-none d-md-block"></div>
+				<div className="d-flex flex-row justify-content-around">
+					<DiJavascript1 className="icons" />
+					<DiNodejs className="icons" />
+					<DiReact className="icons" />
+					<DiMongodb className="icons" />
+					<DiNpm className="icons" />
+					<DiHeroku className="icons" />
+					<DiGit className="icons" />
+					<DiGithubBadge className="icons" />
+				</div>
 			</div>
-
-			<Wave
-				fill={darkMode ? "url(#gradientDark)" : "url(#gradientLight)"}
-				paused={false}
-				options={{
-					height: 20,
-					amplitude: 40,
-					speed: 0.15,
-					points: 3,
-				}}
-			>
-				<defs>
-					<linearGradient
-						id="gradientLight"
-						gradientTransform="rotate(90)"
-					>
-						<stop offset="10%" stopColor="rgb(102, 162, 243)" />
-						<stop offset="90%" stopColor="rgb(102, 162, 243)" />
-					</linearGradient>
-					<linearGradient
-						id="gradientDark"
-						gradientTransform="rotate(90)"
-					>
-						<stop offset="10%" stopColor="rgb(102, 162, 243)" />
-						<stop offset="90%" stopColor="rgb(102, 162, 243)" />
-					</linearGradient>
-				</defs>
-			</Wave>
 		</div>
 	);
 }

@@ -52,9 +52,9 @@ export default function Header() {
 						</Nav.Link>
 						<Nav.Link
 							className="fs-4 fw-light text-reset"
-							href="#projects"
+							href="#work"
 						>
-							Projects
+							Work
 						</Nav.Link>
 						<Nav.Link
 							className="fs-4 fw-light text-reset"
