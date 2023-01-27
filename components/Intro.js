@@ -29,7 +29,7 @@ export default function Intro() {
 								</h2>
 							</span>
 							<span className="fw-lighter p-1">
-								I am a creative Software Engineer&nbsp;with
+								I&apos;m a creative Software Engineer&nbsp;with
 							</span>
 							<h2 className="fs-1 fw-light p-1">
 								a passion for learning...
