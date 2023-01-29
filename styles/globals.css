@@ -96,3 +96,8 @@ a:hover {
   width: 144px;
   height: 144px;
 }
+
+#socials > * > * {
+  width: 72px;
+  height: 72px;
+}

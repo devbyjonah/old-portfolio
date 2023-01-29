@@ -5,6 +5,7 @@ import Head from "next/head";
 // custom components
 import Intro from "../components/Intro";
 import Middle from "../components/Middle";
+import Contact from "../components/Contact";
 
 import { DarkModeContext } from "@/context/DarkModeContext";
 
@@ -47,6 +48,7 @@ export default function Home() {
               </linearGradient>
             </defs>
           </Wave>
+          <Contact />
         </main>
       </div>
     </>
