@@ -18,7 +18,13 @@ export default function Contact() {
 					I&apos;ll get back to you as soon as possible!
 				</p>
 			</div>
-			<Form netlify name="contact" method="POST" className="w-75 mx-auto">
+			<Form
+				netlify
+				name="contact"
+				method="POST"
+				action="/success"
+				className="w-75 mx-auto"
+			>
 				<input type="hidden" name="form-name" value="contact" />
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email address</Form.Label>

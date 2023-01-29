@@ -46,7 +46,7 @@ export default function Header() {
 					>
 						<Nav.Link
 							className="fs-4 fw-light text-reset"
-							href="#home"
+							href="/#home"
 						>
 							Home
 						</Nav.Link>
@@ -58,7 +58,7 @@ export default function Header() {
 						</Nav.Link>*/}
 						<Nav.Link
 							className="fs-4 fw-light text-reset"
-							href="#contact"
+							href="/#contact"
 						>
 							Contact
 						</Nav.Link>
