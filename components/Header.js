@@ -50,12 +50,12 @@ export default function Header() {
 						>
 							Home
 						</Nav.Link>
-						<Nav.Link
+						{/*<Nav.Link
 							className="fs-4 fw-light text-reset"
 							href="#work"
 						>
 							Work
-						</Nav.Link>
+						</Nav.Link>*/}
 						<Nav.Link
 							className="fs-4 fw-light text-reset"
 							href="#contact"
