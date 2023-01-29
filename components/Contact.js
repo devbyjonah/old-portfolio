@@ -20,11 +20,11 @@ export default function Contact() {
 			</div>
 			<Form
 				netlify
-				name="Contact Form"
+				name="contactForm"
 				method="POST"
 				className="w-75 mx-auto"
 			>
-				<input type="hidden" name="form-name" value="Contact Form" />
+				<input type="hidden" name="form-name" value="contactForm" />
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email address</Form.Label>
 					<Form.Control type="email" placeholder="Enter email" />
