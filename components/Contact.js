@@ -19,10 +19,11 @@ export default function Contact() {
 				</p>
 			</div>
 			<Form
+				netlify
 				name="Contact Form"
+				action="/"
 				method="POST"
 				className="w-75 mx-auto"
-				data-netlify="true"
 			>
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email address</Form.Label>
