@@ -27,7 +27,11 @@ export default function Contact() {
 				<input type="hidden" name="form-name" value="contactForm" />
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email address</Form.Label>
-					<Form.Control type="email" placeholder="Enter email" />
+					<Form.Control
+						type="email"
+						placeholder="Enter email"
+						name="email"
+					/>
 					<Form.Text className="text-muted">
 						Your email will never be shared with anyone else.
 					</Form.Text>
@@ -39,6 +43,7 @@ export default function Contact() {
 						as="textarea"
 						rows={3}
 						placeholder="Let's connect!"
+						name="message"
 					/>
 				</Form.Group>
 				<Button variant={darkMode ? "light" : "dark"} type="submit">
