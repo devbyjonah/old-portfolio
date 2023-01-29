@@ -20,6 +20,7 @@ export default function Contact() {
 			</div>
 			<Form
 				name="Contact Form"
+				method="POST"
 				className="w-75 mx-auto"
 				data-netlify="true"
 			>
