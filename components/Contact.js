@@ -22,7 +22,7 @@ export default function Contact() {
 				netlify
 				name="contact"
 				method="POST"
-				action="/success"
+				action="/success.html"
 				className="w-75 mx-auto"
 			>
 				<input type="hidden" name="form-name" value="contact" />
