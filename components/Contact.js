@@ -19,7 +19,7 @@ export default function Contact() {
 				</p>
 			</div>
 			<Form
-				netlify
+				data-netlify="true"
 				name="contact"
 				method="POST"
 				action="success"
