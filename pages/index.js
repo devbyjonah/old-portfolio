@@ -3,7 +3,6 @@ import Wave from "react-wavify";
 // next components
 import Head from "next/head";
 // custom components
-import ProjectGrid from "../components/ProjectGrid";
 import Intro from "../components/Intro";
 import Middle from "../components/Middle";
 
