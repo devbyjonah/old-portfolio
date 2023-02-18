@@ -29,6 +29,7 @@ export default function Contact() {
 				<Form.Group className="mb-3" controlId="formBasicEmail">
 					<Form.Label>Email address</Form.Label>
 					<Form.Control
+						required
 						type="email"
 						placeholder="Enter email"
 						name="email"
@@ -41,6 +42,7 @@ export default function Contact() {
 				<Form.Group className="mb-3" controlId="ControlTextarea1">
 					<Form.Label>Message</Form.Label>
 					<Form.Control
+						required
 						as="textarea"
 						rows={3}
 						placeholder="Let's connect!"
