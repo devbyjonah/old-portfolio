@@ -21,17 +21,15 @@ export default function Intro() {
 								className="img-thumbnail rounded-circle p-1"
 							/>
 						</div>
-						<div className="mt-3 mt-sm-auto mb-auto ms-5">
-							<span className="fw-lighter p-1">
+						<div className="mt-3 mt-sm-auto mb-auto ms-sm-5">
+							<span className="fw-light p-1">
 								Hello! My name is
-								<h2 className="fs-1 fw-light">
-									Jonah&nbsp;Wagner.
-								</h2>
+								<h2 className="fs-1">Jonah&nbsp;Wagner.</h2>
 							</span>
-							<span className="fw-lighter p-1">
+							<span className="fw-light p-1">
 								I&apos;m a creative Software Engineer&nbsp;with
 							</span>
-							<h2 className="fs-1 fw-light p-1">
+							<h2 className="fs-1 p-1">
 								a passion for learning...
 							</h2>
 						</div>
